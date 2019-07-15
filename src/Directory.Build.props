@@ -1,0 +1,30 @@
+﻿<Project>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Keys\Longbow.Utility.snk</AssemblyOriginatorKeyFile>
+    <PackageProjectUrl>https://gitee.com/LongbowEnterprise/Longbow.Utility2010</PackageProjectUrl>
+    <RepositoryUrl>https://gitee.com/LongbowEnterprise/Longbow.Utility2010.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>Longbow</Copyright>
+    <Description>Longbow Component for .net core 2.0 &amp; .net framework 4.0+</Description>
+    <Authors>Argo Zhang(argo@163.com)</Authors>
+    <Product>Longbow Component</Product>
+    <Company>Longbow</Company>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>$(MSBuildProjectName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+    <DefineConstants>NETCore</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Keys\Longbow.Utility.snk" Link="Longbow.Utility.snk" />
+  </ItemGroup>
+</Project>
