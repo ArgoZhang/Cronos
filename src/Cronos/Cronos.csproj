@@ -1,10 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;netstandard2.0;net45;net40</TargetFrameworks>
+    <TargetFrameworks>netstandard1.0;netstandard2.0;net45;net40;net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
+    <Version>9.0.0</Version>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <DebugType>embedded</DebugType>
 
     <PackageId>Longbow.Cronos</PackageId>
     <Authors>Andrey Dorokhov, Sergey Odinokov</Authors>
@@ -16,8 +15,6 @@
     <PackageReleaseNotes>https://github.com/HangfireIO/Cronos/releases</PackageReleaseNotes>
     <Copyright>Copyright © 2016-2018 Sergey Odinokov.</Copyright>
     <PackageTags>Cronos Cron Recurring</PackageTags>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <FileVersion>1.0.0.0</FileVersion>
     <RepositoryUrl>https://gitee.com/LongbowEnterprise/Cronos.git</RepositoryUrl>
   </PropertyGroup>
 
@@ -27,7 +24,4 @@
     <DotNetCliToolReference Include="dotnet-sourcelink" Version="2.8.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
 </Project>
